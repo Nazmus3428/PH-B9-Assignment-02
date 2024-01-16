@@ -8,6 +8,11 @@
     font-family: 'Mulish', sans-serif;
 }
 
+p{
+  color: rgba(19, 19, 24, 0.70);
+}
+
+
 /* Header section styles */
 .navbar {
   display: flex;
@@ -138,8 +143,14 @@ padding-left:15px;
 font-size: 1rem;
 font-weight: 700;
 background: #FF5400;
-cursor: pointer
+cursor: pointer;
+margin-left: 10px;
 
+  }
+
+  .input-container .box-input button:hover{
+    
+    background-color: tomato;
   }
 
 
@@ -198,6 +209,9 @@ font-weight: 800;
 border: none;
 cursor: pointer;
 }
+.tour-description button:hover{
+  background-color: tomato;
+}
 .popular-container .mount{
 
   width: 500px;
@@ -214,6 +228,16 @@ border-radius: 16px;
 .grid-img{
   display: grid;
   gap: 20px;
+  
+
+}
+.row{
+  /* width: 50%;
+  height: 50%; */
+  transition: 0.5s all ease-in-out;
+}
+ .row :hover img{
+  transform: scale(1.05);
 }
 .grid-title{
 
@@ -237,22 +261,47 @@ margin: 0  auto 40px;
 
 /* Choose-Card Styles */
 
+.choose-title h1{
+  color: #131318;
+text-align: center;
+font-size: 2.5rem;
+font-weight: 800;
+}
+.choose-title p{
+  width: 60%;
+  margin: 0 auto;
+  color: rgba(19, 19, 24, 0.70);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+
+}
 .card-container{
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  /* display: grid;
+  grid-template-columns: repeat(2,1fr); */
   gap: 40px;
   
 
 }
+.first-two-card{
+  display: flex;
+  justify-content: center;
+}
+.last-two-card{
+  display: flex;
+  flex-direction: column;
+}
 .card{
-  margin: 0 auto;
-  padding: 40px;
-  width: 80%;
-  height: 284px;
+  margin: 15px auto;
+  padding: 20px 40px;
+  width: 40%;
+  height: 200px;
 border-radius: 16px;
 border: 1px solid rgba(233, 68, 68, 0.20);
 background: rgba(233, 68, 68, 0.05);
+overflow: hidden;
 
 }
 
@@ -261,6 +310,11 @@ border: 1px solid rgba(41, 206, 246, 0.20);
 background: rgba(41, 206, 246, 0.05);
 
 }
+.blank-card{
+  display: none;
+}
+
+
 
 
 /* Subscribe section */
@@ -304,26 +358,36 @@ font-weight: 800;
 .subscribe-section{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 60px;
-  height: 400px;
+  margin-top: 40px;
+  /* height: 400px; */
   margin-bottom: 100px;
 }
 .login{
+  width:30%;
+  height: 100%;
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
   row-gap: 20px;
   border: 1px solid #FF5400;
   border-radius:10px ;
-  padding-left: 10px;
   align-items: center;
+}
+.input-items{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
 }
 .login hr{
   height: 1px;
   border: 0;
   background: black;
-}
-.login input{
+} 
+
+.input-items input{
   width: 80%;
   height: 35px;
   border-radius: 8px;
@@ -333,7 +397,7 @@ padding-left: 10px;
 }
 
 .login button{
-  width: 82%;
+  width: 83%;
   height: 35px;
   border-radius: 8px;
 background: #FF5400;
@@ -342,13 +406,19 @@ color: #FFF;
 text-align: center;
 font-size: 1rem;
 font-weight: 700;
+margin-bottom: 40px;
+cursor: pointer;
+}
+.login button:hover{
+  background-color: tomato;
 }
 .login p{
   color: #5A5A5D;
+  text-align: center;
 font-size: small;
 font-weight: 200;
 line-height: 26px;
-width: 350px;
+width: auto;
 text-wrap: wrap;
 }
 
@@ -526,7 +596,7 @@ background: rgba(255, 255, 255, 0.30);
   font-size: 1.5rem;
   font-weight: 800;
   width: 70vw;
-  margin: 0 auto 30px;
+  margin: 0 auto 20px;
 }
 
 .grid-title p {
@@ -537,6 +607,9 @@ background: rgba(255, 255, 255, 0.30);
 .grid-img {
   grid-template-columns: repeat(1fr);
   gap: 10px;
+}
+.row :hover img{
+  transform: scale(1.1);
 }
 .grid-img .row{
   width: 100%;
@@ -549,6 +622,143 @@ background: rgba(255, 255, 255, 0.30);
   width: 100%;
   height: 200px;
 }
+
+/* Choose Section card media Queries */
+
+.card-container{
+
+  width: 90%;
+  margin: 0 auto;
+
+}
+.card{
+
+  padding: 10px 20px;
+  width: 100%;
+  height: 180px;
+}
+
+.first-two-card{
+
+  flex-wrap: wrap;
+  
+}
+.choose-title p{
+  width: 90%;
+    margin: 40px auto;
+    margin: 10px auto 40px;
+    text-align: justify;
+    text-justify:newspaper;
+    font-size: small;
+}
+.choose-title h1{
+  font-size: 1.5rem;
+    font-weight: 800;
+    width: 70vw;
+    margin: 40px auto 0px;
+}
+.card h1{
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+.card p{
+
+  font-size: smaller;
+  font-weight: 300;
+}
+.card svg{
+  width: 40px;
+  height: 40px;
+}
+.last-one-card{
+  display: flex;
+  flex-wrap: wrap;
+}
+.blank-card{
+  display: none;  
+}
+
+
+/* Subscribe Section works */
+
+.subscribe-section {
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  row-gap: 50px;
+}
+
+.save-img{
+  width: 100%;
+
+}
+
+.save-img img{
+  width: 100%;
+  height: auto;
+}
+
+.login{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.save {
+  width: 50%;
+  height: 60%;
+  border-radius: 16px;
+  left: 50%;
+  bottom: 85px;
+  /* transform: rotate(-19.628deg);
+  background: rgb(255, 84, 0);
+  position: relative;
+  left: 395px;
+  bottom: 140px; */
+}
+
+.save h6 {
+    font-size: small;
+  /* transform: rotate(-19.628deg);
+  background: rgb(255, 84, 0);
+  position: relative;
+  left: 395px;
+  bottom: 140px; */
+}
+
+.save h3{
+  font-size: medium;
+  font-weight: 500;
+}
+
+
+
+/* Footer works */
+
+.footer-title {
+  padding-top: 40px;
+}
+.footer p {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+.footer hr {
+  width: 70%;
+  height: 1px;
+  background: rgba(19, 19, 24, 0.10);
+}
+
+.footer .nav-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.footer-logo {
+  width: 34px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+
 
 
 
