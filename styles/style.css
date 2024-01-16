@@ -75,7 +75,6 @@ font-weight: 800;
 height: 400px;
 flex-shrink: 0;
 border-radius: 16px;
-/* background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%); */
 text-align: center;
   }
 
@@ -168,6 +167,7 @@ padding-left:10px ;
   display: flex;
   justify-content: space-evenly;
   margin-top: 100px;
+  margin-bottom: 100px;
 
 }
 .tour-description{
@@ -205,18 +205,208 @@ height: 500px;
 border-radius: 16px;
 }
 
+/* Grid Collage styles */
+.row{
+  display: flex;
+    gap: 20px;
+    /* margin-bottom: 5px; */
+}
+.grid-img{
+  display: grid;
+  gap: 20px;
+}
+.grid-title{
+
+  text-align: center;
+}
+.grid-title h1{
+  
+  color: #131318; 
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.grid-title p{
+  
+color: rgba(19, 19, 24, 0.70);
+font-size: 1rem;
+font-weight: 400;
+line-height: 26px;
+width: 643px;
+margin: 0  auto 40px;
+}
+
+/* Choose-Card Styles */
+
+.card-container{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+  
+
+}
+.card{
+  margin: 0 auto;
+  padding: 40px;
+  width: 80%;
+  height: 284px;
+border-radius: 16px;
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+
+}
+
+.last-card{
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+
+}
 
 
+/* Subscribe section */
 
 
+.save
+{ text-align: center;
+  width: 280px;
+  height: 100px;
+  border-radius: 16px;
+  transform: rotate(-19.628deg);
+  background: #FF5400;
+  background-color: #FF5400;
+  position: relative;
+  left: 395px;
+  bottom: 140px;
+  
+}
+
+.save h6, h3{
+
+  color: #FFF;
+  margin: 2px;
+}
+.save h6{
+  padding: 20px 0 0;
+  margin: 2px;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.save h2{
+
+font-size: 1.5rem;
+font-weight: 800;
+}
+
+
+.subscribe-section{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  height: 400px;
+  margin-bottom: 100px;
+}
+.login{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  row-gap: 20px;
+  border: 1px solid #FF5400;
+  border-radius:10px ;
+  padding-left: 10px;
+  align-items: center;
+}
+.login hr{
+  height: 1px;
+  border: 0;
+  background: black;
+}
+.login input{
+  width: 80%;
+  height: 35px;
+  border-radius: 8px;
+background: rgba(19, 19, 24, 0.05);
+border: none;
+padding-left: 10px;
+}
+
+.login button{
+  width: 82%;
+  height: 35px;
+  border-radius: 8px;
+background: #FF5400;
+border: none;
+color: #FFF;
+text-align: center;
+font-size: 1rem;
+font-weight: 700;
+}
+.login p{
+  color: #5A5A5D;
+font-size: small;
+font-weight: 200;
+line-height: 26px;
+width: 350px;
+text-wrap: wrap;
+}
+
+/* Footer Section */
+
+
+.footer{
+  background: rgba(19, 19, 24, 0.05);
+  width: 100%;
+height: 500px;
+position: relative;
+bottom: 0;
+}
+
+.footer-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+
+}
+.footer-logo{
+  width: 48px;
+    height: 50px;
+    margin-right: 20px;
+
+}
+.footer-info{
+  color: #5A5A5D;
+text-align: center;
+font-size: 1rem;
+font-weight: small;
+}
+
+.footer-icon{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.footer hr{
+  width: 872px;
+height: 1px;
+background: rgba(19, 19, 24, 0.10);
+}
+
+.footer p{
+  font-size: smaller;
+  text-align: center;
+  margin-top: 40px;
+}
 
 
   /* Responsive layout for mobile devices */
 
   @media screen and (max-width:576px) {
     body{
-        max-width: 330px;
-        margin: 0 auto;
+        max-width: 340px;
+        margin: 0 auto;             
     }
     .nav-title{
         position: relative;
@@ -240,6 +430,129 @@ border-radius: 16px;
     .navbar{
         justify-content: space-evenly;
     }
+
+    .explore{
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      margin: 30px auto 0;
+      background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Rectangle gg.png");
+   
+    }
+
+    .explore-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .explore-info {
+      text-align: center;
+      font-size: small;
+      font-weight: 400;
+      margin-bottom: 5px;
+      line-height: 14px; /* 150% */
+  }
+  .input-container {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+
+}
+
+.input-container .box-input {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin:0 9.5%;
+}
+
+.box-input input[type="search"]{
+  width: 220px ;
+  height: 40px;
+}
+.input-container .box-input select {
+  width: 220px;
+  height: 40px;
+}
+
+.input-container .box-input button {
+  width: 220px;
+  height: 40px;
+}
+.input-container {
+  border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
+
+}
+
+.popular-container {
+  flex-direction: column;
+  margin-top: 50px;
+  /* width: 100%; */
+}
+
+.tour-description {
+  padding-bottom: 24px;
+  width: 100%;
+}
+.tour-description h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.tour-description button {
+  border-radius: 8px;
+  background: #FF5400;
+  width: 120px;
+  height: 42px;
+  font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+}
+.popular-container .mount{
+  width: 100%;
+  height: auto;
+}
+.popular-container .mount img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.grid-collage{
+  width: 100%;
+  margin: 0 auto;
+}
+.grid-title h1{
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 70vw;
+  margin: 0 auto 30px;
+}
+
+.grid-title p {
+  font-size: small;
+  width: 60vw;
+  margin: 0 auto 30px;
+}
+.grid-img {
+  grid-template-columns: repeat(1fr);
+  gap: 10px;
+}
+.grid-img .row{
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid-img .row img{
+  width: 100%;
+  height: 200px;
+}
+
+
+
+
 
   }
     
