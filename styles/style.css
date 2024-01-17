@@ -144,7 +144,7 @@ font-size: 1rem;
 font-weight: 700;
 background: #FF5400;
 cursor: pointer;
-margin-left: 10px;
+
 
   }
 
@@ -219,62 +219,7 @@ height: 500px;
 border-radius: 16px;
 }
 
-/* Grid Collage styles */
-/* .mid-container{
-  position: relative;
-  text-align: center;
-  color: white;
-  z-index: 2;
-}
-.row img{
-  visibility: hidden;
-}
-.mid-container.centered{
-  background-color: #131318;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-  color: #FFF;
-  font-size: large;
-} */
-.centered-text .mid{
-  position: relative;
-  /* color: #FFF; */
-  font-size: 1.5rem;
-  font-weight: 700;
-  
-}
-.maldives{
-  left: 240px;
-  top: 340px;
-}
-.indonesia{
-  top: 310px;
-  left: 830px;
-}
-.srilanka{
-  top: 610px;
-  left: 140px;
-}
-.north{
-  top:580px;
-  left: 550px;
-}
-
-.kashmir{
-  top:550px;
-  left: 980px;
-}
-
-.bangladesh{
-  top: 820px;
-  left: 170px;
-}
-.bandarban{
-  top: 790px;
-  left: 760px;
-}
+/*Destination styles */
 .row{
   display: flex;
     gap: 20px;
@@ -287,13 +232,13 @@ border-radius: 16px;
 
 }
 .row{
-  /* width: 50%;
+  width: 50%;
   height: 50%; */
-  /* transition: 0.5s all ease-in-out; */
+   transition: 0.5s all ease-in-out; 
 }
- /* .row :hover img{
+ .row :hover img{
   transform: scale(1.05);
-} */
+}
 .grid-title{
 
   text-align: center;
